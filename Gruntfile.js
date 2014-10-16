@@ -237,7 +237,7 @@ module.exports = function (grunt) {
           '<%= config.dist %>/styles'
         ]
       },
-      html: ['<%= config.dist %>/{,*/}*.html'],
+      html: ['<%= config.dist %>/**/*.html'],
       css: ['<%= config.dist %>/styles/{,*/}*.css']
     },
 
@@ -280,7 +280,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.dist %>',
-          src: '{,*/}*.html',
+          src: '**/*.html',
           dest: '<%= config.dist %>'
         }]
       }
